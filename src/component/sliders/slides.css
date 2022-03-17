@@ -1,0 +1,39 @@
+.container{
+    position:relative;
+    height:100vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+ img{
+    height:500px;
+    width:700px;
+    margin:auto;
+    border-radius:10px;
+}
+.left{
+    position:absolute;
+    top:50%;
+    left:50px;
+    z-index:10;
+    font-size:40px;
+    cursor:pointer;
+}
+.right{
+    position:absolute;
+    top:50%;
+    right:50px;
+    z-index:10;
+    font-size:40px;
+    cursor:pointer;
+}
+.slide{
+    opacity:0;
+    transition-duration:1s ease;
+}
+.slide.active{
+    opacity:1;
+    transition-duration:1s;
+    transform:scale(1.08);
+}
